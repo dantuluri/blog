@@ -58,7 +58,7 @@ router.get('/about', function(req , res){
 });
 
 
-router.get('/:id', function(req , res){
+router.get('/iarrc2018', function(req , res){
     res.render('iarrc18');
 });
 
