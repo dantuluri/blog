@@ -57,11 +57,9 @@ router.get('/about', function(req , res){
   res.render('about');
 });
 
+
 router.get('/:id', function(req , res){
-    console.log(req.params.id);
-    var id = req.params.id;
-    // res.render(req.params.id/post);
-    res.render(__dirname + '/../' + id + '/post');
+    res.render('iarrc18');
 });
 
 module.exports = router;
