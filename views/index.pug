@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  include start.pug
+  body(onload='resize()')
+    include head.pug
+    dt-article
+      .posts-list.l-page
+        for eachPost in apiBlog
+            a.post-preview(href='/' + eachPost.path)
+              .metadata
+                .publishedDate= eachPost.date
+              .thumbnail
+                img(src= eachPost.imageURL + "/")
+              .description
+                h2= eachPost.title
+                p
+                  | #{eachPost.description}
+    include footer.pug
