@@ -60,7 +60,7 @@ router.get('/about', function(req , res){
 
 router.get('/iarrc2018', function(req , res){
     res.render('iarrc18');
-    res.sendFile('hard-iarrc18.html');
+//    res.sendFile('hard-iarrc18.html');
 });
 
 module.exports = router;
