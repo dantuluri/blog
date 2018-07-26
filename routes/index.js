@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const axios = require('axios');
+var path    = require("path");
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -59,8 +61,7 @@ router.get('/about', function(req , res){
 
 
 router.get('/iarrc2018', function(req , res){
-    res.render('iarrc18');
-//    res.sendFile('hard-iarrc18.html');
+   res.sendFile(path.join(__dirname+'/main.html'));
 });
 
 module.exports = router;
